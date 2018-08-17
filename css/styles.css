@@ -1,0 +1,175 @@
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url("../images/dark.jpg");
+	background-size: cover;
+}
+
+.navbar {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(60px, auto);
+	width: 50%;
+	padding-left: 25.25%;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 0 8px 6px -6px black;
+}
+
+.homeButton {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.photosButton {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.aboutButton {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.contactButton {
+	grid-column: 4;
+	grid-row: 1;
+}
+
+#navButton {
+	opacity: .8;
+}
+
+#navButton:hover {
+	opacity: 1.0;
+	transform: scale(1.03,1.03);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 20% 60% 20%);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(auto, auto);
+  padding-top: 100px;
+}
+#leftArrow {
+	grid-column: 1;
+	grid-row: 1;
+	font-size: 60px;
+	color: white;
+	opacity: .2;
+	padding-left: 60%;
+	padding-top: 80%;
+}
+
+#leftArrow:hover {
+	opacity: 1.0;
+	transform: scale(1.01,1.01);
+}
+
+.photoWrapper {
+	grid-column: 2;
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: repeat(3 1fr);
+	grid-gap: 30px;
+	grid-auto-rows: minmax(201px, auto);
+}
+.imageOne {
+  grid-column: 1;
+  grid-row: 1;
+  background-image: url("../images/testimage1.jpg");
+  background-size: cover;
+}
+.imageOneLarge {
+	grid-column: 1;
+	grid-row: 1;
+	visibility: hidden;
+	position: relative;
+	transform:scale(3.72,3.72);
+	left:110%;
+	top:115%;
+	z-Index:999999;
+	opacity:1.0;
+	box-shadow: 0 8px 6px -6px black;
+	background-image: url("../images/testimage1.jpg");
+    background-size: cover;
+}
+.imageTwo { 
+  grid-column: 2;
+  grid-row: 1;
+  background-image: url("../images/testimage2.jpg");
+  background-size: cover;
+}
+.imageThree {
+  grid-column: 3;
+  grid-row: 1;
+  background-image: url("../images/testimage3.jpg");
+  background-size: cover;
+}
+.imageFour {
+  grid-column: 1;
+  grid-row: 2;
+  background-image: url("../images/testimage4.jpg");
+  background-size: cover;
+}
+.imageFive {
+  grid-column: 2;
+  grid-row: 2;
+  background-image: url("../images/testimage5.jpg");
+  background-size: cover;
+}
+.imageSix {
+  grid-column: 3;
+  grid-row: 2;
+  background-image: url("../images/testimage6.jpg");
+  background-size: cover;
+}
+.imageSeven {
+  grid-column: 1;
+  grid-row: 3;
+  background-image: url("../images/testimage7.jpg");
+  background-size: cover;
+}
+.imageEight {
+  grid-column: 2;
+  grid-row: 3;
+  background-image: url("../images/testimage8.jpg");
+  background-size: cover;
+}
+.imageNine {
+  grid-column: 3;
+  grid-row: 3;
+  background-image: url("../images/testimage9.jpg");
+  background-size: cover;
+}
+#rightArrow {
+	grid-column: 3;
+	grid-row: 1;
+	font-size: 60px;
+	color: white;
+	padding-left: 35%;
+	padding-top: 80%;
+	opacity: .2;
+}
+
+#rightArrow:hover {
+	opacity: 1.0;
+	transform: scale(1.01,1.01);
+}
+
+.photo {
+	opacity: .8;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.photo:hover {
+	opacity: 1.0;
+	transform: scale(1.01,1.01);
+}
